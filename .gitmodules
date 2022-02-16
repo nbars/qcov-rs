@@ -1,0 +1,9 @@
+[submodule "qemu"]
+	path = qemu
+	url = git@github.com:nbars/qemu-qcov-rs.git
+[submodule "shared"]
+	path = shared
+	url = git@github.com:nbars/shared-qcov-rs.git
+[submodule "tracer"]
+	path = tracer
+	url = git@github.com:nbars/tracer-qcov-rs.git
