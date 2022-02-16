@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -eu
+source hooks/lib.sh
+
+log_success "Running clippy hook"
+if ! cargo clippy ; then
+    log_error 'There are some code issues, run `cargo clippy` to get details'
+    exit 1
+fi
+
+exit 0
